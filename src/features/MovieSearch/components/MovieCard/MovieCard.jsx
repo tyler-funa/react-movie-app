@@ -3,6 +3,7 @@ import MovieDetails from "../MovieDetails/MovieDetails";
 import "./styles.css";
 
 const MovieCard = ({ movieData }) => {
+  console.log({ movieData });
   return (
     <div>
       {movieData && (

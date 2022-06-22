@@ -17,7 +17,7 @@ const Content = styled.section`
   }
 `
 
-const MovieDetails = ({ Title, Year, imdbID, Type, Poster, Plot, Actors }, favorites) => {
+const MovieDetails = ({ Title, Year, imdbID, Type, Poster, Plot, Actors, Runtime }, favorites) => {
   const { addMovie, movies } = useMovies();
 
   const addMovieWithCheck = (movie) => {
@@ -37,8 +37,9 @@ const MovieDetails = ({ Title, Year, imdbID, Type, Poster, Plot, Actors }, favor
         <h2>IMDB ID: {imdbID}</h2>
         <p>Plot: {Plot}</p>
         <p>Actors: {Actors}</p>
-        <button 
-          onClick={() => addMovieWithCheck({ Title, Year, Actors })}
+        <p>Runtime: {Runtime}</p>
+        <button
+          onClick={() => addMovieWithCheck({  Title, Year, imdbID, Type, Poster, Plot, Actors, Runtime   })}
         >Add to favorites</button>
       </Content>
     </Container>
