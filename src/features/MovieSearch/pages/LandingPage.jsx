@@ -14,6 +14,8 @@ const Container = styled.div`
     padding: 10px;
     color: white;
     font-weight: bolder;
+    margin-top: 3em;
+    margin-right: .5em;
   }
 `
 
@@ -22,7 +24,6 @@ const LandingPage = () => {
 
   return (
     <Container>
-      <h1>Welcome to my movie app!</h1>
       <MovieSearch setMovie={setMovie} />
       <div>
         {movie && <MovieCard movieData={movie} />}

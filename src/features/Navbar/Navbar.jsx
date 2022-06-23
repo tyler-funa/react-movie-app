@@ -7,13 +7,12 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-
-
-
+  box-shadow: 0px 10px 13px -10px #000000;
 
   h1 {
     margin: 0;
     padding: 0;
+    font-size: 1.5em;
   }
 
   div {
@@ -26,7 +25,10 @@ const Wrapper = styled.div`
 `;
 
 const StyledLink = styled(Link) `
-text-decoration: none;`
+color: black;
+text-decoration: none;
+font-size: 1.5em;
+font-weight: bold; `
 
 export default function Navbar() {
   return (

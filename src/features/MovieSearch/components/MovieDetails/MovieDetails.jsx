@@ -15,6 +15,20 @@ const Content = styled.section`
   h1, h2 {
     margin: 0;
   }
+  button {
+  background-color: #8f0e4a;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 13px -7px #000000;
+
+
+  &:hover {
+    background-color: #054cda;
+  }
+
+  }
 `
 
 const MovieDetails = ({ Title, Year, imdbID, Type, Poster, Plot, Actors, Runtime }, favorites) => {

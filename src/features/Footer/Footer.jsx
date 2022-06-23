@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
+  box-shadow: 0px 10px 13px 7px #000000;
 
   h1 {
     margin: 0;
