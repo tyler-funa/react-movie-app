@@ -6,6 +6,7 @@ import { MoviesProvider } from "./features/Providers/MoviesProvider";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FavoritesPage from './features/FavoriteMovies/pages/FavoritesPage';
 import Navbar from "./features/Navbar/Navbar";
+import Footer from "./features/Footer/Footer"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,11 +14,17 @@ root.render(
     <BrowserRouter>
       <MoviesProvider>
         <Navbar />
+
         <Switch>
           <Route exact path="/" component={LandingPage} />
+
           <Route path="/favorites" component={FavoritesPage} />
         </Switch>
+
+        <Footer/>
+
       </MoviesProvider>
     </BrowserRouter>
+
   </React.StrictMode>
 );
